@@ -1,7 +1,7 @@
-//  Primitive dattypes
+//  Primitive datAtypes
 
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol(to make value unique ), BigInt(big value)
+//  7 types : String, Number, Boolearn, null, undefined, Symbol (to make value unique ), BigInt(big value)
 
 const score = 100
 const scoreValue = 100.3
@@ -41,3 +41,31 @@ console.log(typeof myFunction);
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+/*********************************************MEMORY**************************************************/
+//1.Stack(takes copy value)=>it uses primitive Datatype
+//  2.Heap(gives  reference of original value)=>it uses non primitive value 
+
+let myName = "piyush"
+
+let anotherName = myName
+anotherName = "pratysh"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "okay@gmail.com",
+    upi: "8888888@rapl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "google@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
